@@ -12,12 +12,11 @@ def isPrime(n):
 def solve1(n):
     a=0
     b=1
-    for i in range(96):
+    while True:
         c=a+b
         if len(str(c))>=n and isPrime(c):
             return c
         a,b=b,c
-    return -1
 
 # did cheating by hard coding prime of 2 ranges
 # 10-17 and 17-20
@@ -54,4 +53,5 @@ def solve3(n):
             l=mid+1
     return ans
 
-print(solve3(20))
+n=int(input())
+print(solve3(n))

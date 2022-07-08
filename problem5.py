@@ -16,5 +16,5 @@ def solve(n):
         if gcd(n,i)==1:
             count+=1
     return count
-
-print(solve(35))
+n=int(input())
+print(solve(n))

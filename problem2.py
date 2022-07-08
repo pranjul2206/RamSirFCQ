@@ -30,5 +30,5 @@ def solve2(n,divisor):
             print(i,end=' ')
             solve2(n//i,i)
             break
-
-solve2(24,2)
+n=int(input())
+solve2(n,2)

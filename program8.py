@@ -12,7 +12,6 @@ def setMine():
             mines.append([num1,num2])
 
 def Mark(i,j):
-    dir=[[0,1],[1,0],[-1,0],[0,-1],[1,1],[-1,-1],[1,-1],[-1,1]]
     for k in dir:
         ni=i+k[0]
         nj=j+k[1]
@@ -33,5 +32,6 @@ def solve():
 
 n,m,k=list(map(int,input().split()))
 arr=[[0]*m for i in range(n)]
+dir=[[0,1],[1,0],[-1,0],[0,-1],[1,1],[-1,-1],[1,-1],[-1,1]]
 mines=[]
 solve()

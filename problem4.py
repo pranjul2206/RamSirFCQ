@@ -4,4 +4,5 @@ def solve(arr):
     condition2=arr[2]**2 == arr[1]**2+arr[0]**2
     return condition1 and condition2
 
-print(solve([4,5,-3]))
+arr=list(map(int,input().split()))
+print(solve(arr))

@@ -50,5 +50,6 @@ def solve(arr):
             res=rightShift(res,index)
             res[index]=num
     return res
-
-print(solve([2,5,4,3]))
+    
+arr=list(map(int,input().split()))
+print(solve(arr))
